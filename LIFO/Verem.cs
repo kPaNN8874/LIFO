@@ -45,7 +45,7 @@ namespace LIFO
             }
               else if (stackPointer == 0)
             {
-                throw new Exception("Nincs elem a stackbe");
+                throw new Exception("Nincs elem a stackbe, nincs mit törölni. ");
             }
         }
     //Celar() - kiurites
@@ -59,11 +59,6 @@ namespace LIFO
 
     //Extra:
     //Reverse() -elemek sorrendjének megforditasa
-    //Sort() - Elemenk rendezese novekvo sorrenben
-
-
-    
-
-
+    //Sort() - Elemenk rendezese novekvo sorrenben 
     }
 }
