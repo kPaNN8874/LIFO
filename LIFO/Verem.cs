@@ -37,16 +37,14 @@ namespace LIFO
                   }
         }
     //Pop()
-        public void Pop(double element)
+        public double Pop()
         {
-              if (stackPointer < 0)
+
+            if (stackPointer == 0)
             {
-                array[stackPointer--] = element;
+                throw new Exception("Empty stack error!");
             }
-              else if (stackPointer == 0)
-            {
-                throw new Exception("Nincs elem a stackbe, nincs mit törölni. ");
-            }
+           return  array[stackPointer--];
         }
     //Celar() - kiurites
 
@@ -54,9 +52,13 @@ namespace LIFO
         {
             stackPointer = 0;
         }
-    //GetSize()-merete a veremnek
-    //GetLength() - veremben levo elemek szama
-
+        //GetSize()-merete a veremnek
+        public int GetSize => array.Length;
+        //GetLength() - veremben levo elemek szama
+        public int GetLength => stackPointer;
+        
+            
+        
     //Extra:
     //Reverse() -elemek sorrendjének megforditasa
     //Sort() - Elemenk rendezese novekvo sorrenben 
