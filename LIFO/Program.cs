@@ -16,5 +16,8 @@ internal class Program
         Console.WriteLine(halmaz.ToString());
         halmaz.Remove("István");
         Console.WriteLine(halmaz.ToString());
+        Matrixok elso = new Matrixok();
+        elso.Fill(3);
+        elso.Print();    
     }
 }
