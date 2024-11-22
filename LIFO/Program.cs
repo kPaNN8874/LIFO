@@ -18,6 +18,12 @@ internal class Program
         Console.WriteLine(halmaz.ToString());
         Matrixok elso = new Matrixok();
         elso.Fill(3);
-        elso.Print();    
+        Console.WriteLine("M1----------------------");
+        elso.Print();   
+        Matrixok masodik = new Matrixok();
+        masodik.Fill(5);
+        Console.WriteLine("M2----------------------");
+        masodik.Print();
+        
     }
 }
