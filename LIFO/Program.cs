@@ -24,6 +24,17 @@ internal class Program
         masodik.Fill(5);
         Console.WriteLine("M2----------------------");
         masodik.Print();
+
+        UMatrix matrix = new UMatrix();
+        matrix.Fill(5);
+        matrix[1, 3] = 10;
+        matrix[1, 2] = 20;
+
+        Console.WriteLine(matrix);
+        matrix.RotateToLeft();
+        Console.WriteLine(matrix);
+        matrix.RotatetToRight();
+        Console.WriteLine(matrix);
         
     }
 }

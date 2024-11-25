@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LIFO
 { //elem - double
-    public class Verem
+    public class Verem                                
     {
     //Elemek tárolása: Arraybe
         private double[] array;
